@@ -63,3 +63,20 @@ button.comprar-btn {
 button.comprar-btn:hover {
     background-color: #218838;
 }
+
+@media screen and (max-width: 480px){
+    header {
+        background-color: mediumspringgreen;
+        font-family: URW Chancery L, cursive;
+    }
+}
+
+@media screen and (max-width:1024px){
+    body {
+        padding: 30px;
+        font-size: medium;
+
+    }
+
+}
+    
