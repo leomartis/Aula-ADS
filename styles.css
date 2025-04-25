@@ -34,11 +34,11 @@ main {
 .skins-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 20%;
 }
 
 .skin-item {
-    width: 200px;
+    width: 100%;
     padding: 10px;
     background-color: white;
     border-radius: 8px;
@@ -73,7 +73,7 @@ button.comprar-btn:hover {
 
 @media screen and (max-width:1024px){
     body {
-        padding: 30px;
+        padding: 100%;
         font-size: medium;
 
     }
