@@ -6,16 +6,31 @@ body {
 }
 
 header {
-    background-color: #111;
-    color: white;
-    padding: 1rem;
+    background-color: #1f1f1f;
+    padding: 20px;
     text-align: center;
+    border-bottom: 2px solid #333;
+    color: white;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
 header nav ul {
     list-style: none;
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
+nav ul li a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}S
 
 header nav ul li {
     display: inline;
@@ -28,7 +43,9 @@ header nav ul li a {
 }
 
 main {
-    padding: 20px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .skins-list {
@@ -38,7 +55,7 @@ main {
 }
 
 .skin-item {
-    width: 100%;
+    width: 20%;
     padding: 10px;
     background-color: white;
     border-radius: 8px;
@@ -46,8 +63,9 @@ main {
     text-align: center;
 }
 
+
 .skin-item img {
-    width: 100%;
+    width: 60%;
     border-radius: 5px;
 }
 
@@ -66,17 +84,23 @@ button.comprar-btn:hover {
 
 @media screen and (max-width: 480px){
     header {
-        background-color: mediumspringgreen;
+        background-color: gray;
         font-family: URW Chancery L, cursive;
     }
 }
 
 @media screen and (max-width:1024px){
     body {
-        padding: 100%;
+        padding: 10%;
         font-size: medium;
 
     }
 
-}
+}   
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    }
+    
     
