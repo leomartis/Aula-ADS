@@ -264,3 +264,9 @@ button.comprar-btn:hover {
         width: 80%;
     }
 }
+
+.grid { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px; 
+} 
