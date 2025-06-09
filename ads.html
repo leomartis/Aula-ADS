@@ -7,34 +7,57 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <header>
-        <h1>Bem-vindo à Loja de Skins CS:GO</h1>
-        <nav>
-            <ul>
-                <li><a href="/skins">Skins</a></li>
-                <li><a href="/login">Entrar</a></li>
-                <li><a href="/cadastro">Cadastrar</a></li>
-            </ul>
-        </nav>
+        <div class="header-content">
+            <h1>Loja de Skins CS:GO</h1>
+            <nav>
+                <ul>
+                    <li><a href="/skins">Skins</a></li>
+                    <li><a href="/login">Entrar</a></li>
+                    <li><a href="/cadastro">Cadastrar</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon" title="Carrinho">
+                🛒 <span id="cart-count">0</span>
+            </div>
+        </div>
     </header>
 
     <main>
         <section class="skins-list">
             <div class="skin-item" id="skin1">
                 <img src="https://cslabez.com/wp-content/uploads/2025/01/All-you-need-to-know-about-the-cs2-AWP-dragon-lore.jpg"
-                srcset="https://cslabez.com/wp-content/uploads/2025/01/awp-dragon-lore-small.jpg 480w,
-      https://cslabez.com/wp-content/uploads/2025/01/All-you-need-to-know-about-the-cs2-AWP-dragon-lore.jpg 1024w,
-      https://cslabez.com/wp-content/uploads/2025/01/All-you-need-to-know-about-the-cs2-AWP-dragon-lore.jpg 1600w"
-    sizes="(max-width: 600px) 480px, (max-width: 1200px) 1024px, 1600px"
+                     alt="AWP Dragon Lore">
                 <h3>AWP | Dragon Lore</h3>
-                <p>Preço: 50.000,00</p>
+                <p class="preco">R$ 50.000,00</p>
                 <button class="comprar-btn" data-skin="1">Comprar</button>
             </div>
-         </section>
+        </section>
+
+        <section class="formulario"> 
+            <h2>Fale Conosco</h2>
+            <form id="contato-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
 
+    <div id="carrinho-modal" class="carrinho-modal hidden">
+        <h3>Itens no Carrinho</h3>
+        <ul id="carrinho-lista"></ul>
+        <button id="fechar-carrinho">Fechar</button>
+    </div>
 
-
-    
+    <script src="ads.js"></script>
 </body>
 </html>
