@@ -248,6 +248,58 @@ button.comprar-btn:hover {
 .hidden {
     display: none;
 }
+.formulario form label {
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.formulario input[type="password"] {
+    background-color: #2a2a2a;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.formulario button {
+    background-color: #007bff;
+}
+
+.formulario button:hover {
+    background-color: #0069d9;
+}
+
+/* === HEADER PARA TELAS DE LOGIN/CADASTRO === */
+header h1 {
+    font-size: 2rem;
+}
+
+header nav ul {
+    margin-top: 10px;
+}
+
+/* === ESTILO DAS SKINS === */
+.skin-item {
+    border: 1px solid #333;
+    background-color: #1b1b1b;
+}
+
+.skin-item h3 {
+    color: #ffcc00;
+}
+
+.skin-item .preco {
+    font-size: 1.1rem;
+}
+
+button.comprar-btn {
+    background-color: #007bff;
+}
+
+button.comprar-btn:hover {
+    background-color: #0056b3;
+}
 
 @media screen and (max-width: 768px) {
     .header-content {

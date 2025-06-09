@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro - Skins CS:GO</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>Cadastro</h1>
+      <nav>
+        <ul>
+          <li><a href="ads.html">Início</a></li>
+          <li><a href="login.html">Entrar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="formulario">
+      <h2>Crie sua conta</h2>
+      <form id="cadastro-form">
+        <label for="nome">Nome:</label>
+        <input type="text" id="cadastro-nome" name="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="cadastro-email" name="email" required>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="cadastro-senha" name="senha" required minlength="6">
+
+        <button type="submit">Cadastrar</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="ads.js"></script>
+</body>
+</html>
